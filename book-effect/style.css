@@ -1,27 +1,31 @@
+/* Reset default margins and set the viewport background to transparent */
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  background: transparent;
+  background: transparent !important;
 }
 
+/* Center the flipbook on the page and set its background to transparent */
 .flipbook {
-  margin: 40px auto; 
-  background: transparent;
+  margin: 40px auto;
+  background: transparent !important;
 }
 
+/* Each page with fixed dimensions and a transparent background */
 .page {
-  width: 850px;   /* match turn.js width */
-  height: 750px;  /* match turn.js height */
+  width: 800px;   /* Must match turn.js width */
+  height: 600px;  /* Must match turn.js height */
   position: relative;
-  background: transparent;
+  background: transparent !important;
 }
 
+/* Ensure the entire image is visible without cropping, with transparent letterboxing */
 .page img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  background: transparent;
+  object-fit: contain;  /* Displays the entire image without cropping */
+  background: transparent !important;
   display: block;
 }
