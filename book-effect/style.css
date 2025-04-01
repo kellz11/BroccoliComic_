@@ -1,0 +1,29 @@
+/* Reset default margins and fill the viewport background */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #ccc; /* Background color */
+}
+
+/* Center the flipbook on the page */
+.flipbook {
+  margin: 40px auto;
+}
+
+/* Each page matches the fixed dimensions used by turn.js */
+.page {
+  width: 800px;   /* Must match turn.js width */
+  height: 600px;  /* Must match turn.js height */
+  position: relative;
+}
+
+/* Ensure the entire image is visible (with letterboxing if needed) */
+.page img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* Displays the entire image without cropping */
+  background: #000;     /* Letterbox background color */
+  display: block;
+}
