@@ -12,8 +12,8 @@ html, body {
 }
 
 .page {
-  width: 850px;   /* match turn.js width */
-  height: 650px;  /* match turn.js height */
+  width: 650px;   /* match turn.js width */
+  height: 450px;  /* match turn.js height */
   position: relative;
   background: transparent;
 }
